@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acertijo Einstein</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+
+    <h1 id="titulo">
+        <center>Acertijo Einstein</center>
+    </h1>
+    <button class="accordion">Instrucciones</button>
+    <div class="panel">
+        <p>
+            En una calle hay cinco casas, cada una de un color distinto. En cada casa vive una persona de distinta
+            nacionalidad.
+            Cada dueño bebe un único tipo de bebida, fuma una sola marca de cigarrillos y tiene una mascota diferente a
+            sus
+            vecinos. A partir de las 15 pistas presentadas a continuación, la consigna que hay que responder es: "¿Quién
+            es el
+            dueño del Pez?"
+            </br>
+            </br>
+            Elija la opcion en la casilla correspondiente, luego de llenar todos los cuadros presiona en CHECK para
+            verificar la respuesta.
+        </p>
+    </div>
+
+    <div id="cont1" class="container">
+        <div id="instrucciones">
+
+            <h1 id="tituloinstru">Pistas</h1>
+            <ol id="list">
+                <li>El británico vive en la casa roja</li>
+                <li>El sueco tiene un perro como mascota</li>
+                <li>El danés toma té.</li>
+                <li>El noruego vive en la primera casa.</li>
+                <li>El alemán fuma Prince</li>
+                <li>La casa verde está inmediatamente a la izquierda de la blanca</li>
+                <li>El dueño de la casa verde bebe café.</li>
+                <li>El propietario que fuma Pall Mall cría pájaros.</li>
+                <li>El dueño de la casa amarilla fuma Dunhill.</li>
+                <li>El hombre que vive en la casa del centro bebe leche.</li>
+                <li>El vecino que fuma Blends vive al lado del que tiene un gato.</li>
+                <li>El hombre que tiene un caballo vive al lado del que fuma Dunhill.</li>
+                <li>El propietario que fuma Bluemaster toma cerveza.</li>
+                <li>El vecino que fuma Blends viveal lado del que toma agua.</li>
+                <li>El noruego vive al lado de la casa azul</li>
+
+
+            </ol>
+
+        </div>
+
+        <div id="puzzle">
+            <h1 id="puzz">Puzzle</h1>
+
+
+            <table id="tablita">
+
+                <!-- FILA 1 -->
+
+                <tr>
+                    <th> <i class="fas fa-question" style="font-size: 40px;"></i></th>
+                    <th> <i class="fas fa-home" style="font-size: 40px;"></i></th>
+                    <th> <i class="fas fa-home" style="font-size: 40px;"></i></th>
+                    <th> <i class="fas fa-home" style="font-size: 40px;"></i></th>
+                    <th> <i class="fas fa-home" style="font-size: 40px;"></i></th>
+                    <th> <i class="fas fa-home" style="font-size: 40px;"></i></th>
+                </tr>
+                <!-- FILA 2 -->
+                <tr>
+                    <th>NACIONALIDAD</th>
+
+                    <th>
+
+                        <select class="caja" id="nacionalidad1" onchange="myFunction()">
+                            <option></option>
+                            <option value="britanico">Británico</option>
+                            <option value="sueco">Sueco</option>
+                            <option value="danes">Danes</option>
+                            <option value="noruego">Noruego</option>
+                            <option value="aleman">Aleman</option>
+                        </select>
+                    </th>
+                    <th><select class="caja" id="nacionalidad2" onchange="myFunction2()">
+                            <option></option>
+                            <option value="britanico">Británico</option>
+                            <option value="sueco">Sueco</option>
+                            <option value="danes">Danes</option>
+                            <option value="noruego">Noruego</option>
+                            <option value="aleman">Aleman</option>
+                        </select>
+                    </th>
+                    <th><select class="caja" id="nacionalidad3" onchange="myFunction3()">
+                            <option></option>
+                            <option value="britanico">Británico</option>
+                            <option value="sueco">Sueco</option>
+                            <option value="danes">Danes</option>
+                            <option value="noruego">Noruego</option>
+                            <option value="aleman">Aleman</option>
+                        </select>
+                    </th>
+                    <th><select class="caja" id="nacionalidad4" onchange="myFunction4()">
+                            <option></option>
+                            <option value="britanico">Británico</option>
+                            <option value="sueco">Sueco</option>
+                            <option value="danes">Danes</option>
+                            <option value="noruego">Noruego</option>
+                            <option value="aleman">Aleman</option>
+                        </select>
+                    </th>
+                    <th><select class="caja" id="nacionalidad5" onchange="myFunction5()">
+                            <option></option>
+                            <option value="britanico">Británico</option>
+                            <option value="sueco">Sueco</option>
+                            <option value="danes">Danes</option>
+                            <option value="noruego">Noruego</option>
+                            <option value="aleman">Aleman</option>
+                        </select>
+                    </th>
+                </tr>
+                <!-- FILA 3 -->
+                <tr>
+                    <th>COLOR</th>
+
+                    <th>
+                        <select class="caja" id="colorcasa1" onchange="myFunction6()">
+                            <option></option>
+                            <option value="rojo">Rojo</option>
+                            <option value="verde">Verde</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="amarilla">Amarilla</option>
+                            <option value="azul">Azul</option>
+                        </select>
+
+                    </th>
+                    <th>
+                        <select class="caja" id="colorcasa2" onchange="myFunction7()">
+                            <option></option>
+                            <option value="rojo">Rojo</option>
+                            <option value="verde">Verde</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="amarilla">Amarilla</option>
+                            <option value="azul">Azul</option>
+                        </select>
+                    </th>
+                    <th>
+                        <select class="caja" id="colorcasa3" onchange="myFunction8()">
+                            <option></option>
+                            <option value="rojo">Rojo</option>
+                            <option value="verde">Verde</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="amarilla">Amarilla</option>
+                            <option value="azul">Azul</option>
+
+                        </select>
+                    </th>
+                    <th>
+                        <select class="caja" id="colorcasa4" onchange="myFunction9()">
+                            <option></option>
+                            <option value="rojo">Rojo</option>
+                            <option value="verde">Verde</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="amarilla">Amarilla</option>
+                            <option value="azul">Azul</option>
+                        </select>
+                    </th>
+                    <th><select class="caja" id="colorcasa5" onchange="myFunction10()">
+                            <option></option>
+                            <option value="rojo">Rojo</option>
+                            <option value="verde">Verde</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="amarilla">Amarilla</option>
+                            <option value="azul">Azul</option>
+                        </select></th>
+                </tr>
+
+                <!-- FILA 4 -->
+                <tr>
+                    <th>BEBIDA</th>
+
+                    <th>
+                        <select class="caja" id="bebida1" onchange="myFunction11()">
+                            <option></option>
+                            <option value="te">Té</option>
+                            <option value="cafe">Café</option>
+                            <option value="leche">Leche</option>
+                            <option value="cerveza">Cerveza</option>
+                            <option value="agua">Agua</option>
+
+                        </select>
+                    </th>
+                    <th>
+                        <select class="caja" id="bebida2" onchange="myFunction12()">
+                            <option></option>
+                            <option value="te">Té</option>
+                            <option value="cafe">Café</option>
+                            <option value="leche">Leche</option>
+                            <option value="cerveza">Cerveza</option>
+                            <option value="agua">Agua</option>
+
+                        </select>
+                    </th>
+                    <th>
+                        <select class="caja" id="bebida3" onchange="myFunction13()">
+                            <option></option>
+                            <option value="te">Té</option>
+                            <option value="cafe">Café</option>
+                            <option value="leche">Leche</option>
+                            <option value="cerveza">Cerveza</option>
+                            <option value="agua">Agua</option>
+                        </select>
+                    </th>
+                    <th>
+                        <select class="caja" id="bebida4" onchange="myFunction14()">
+                            <option></option>
+                            <option value="te">Té</option>
+                            <option value="cafe">Café</option>
+                            <option value="leche">Leche</option>
+                            <option value="cerveza">Cerveza</option>
+                            <option value="agua">Agua</option>
+                        </select>
+                    </th>
+
+                    <th>
+                        <select class="caja" id="bebida5" onchange="myFunction15()">
+                            <option></option>
+                            <option value="te">Té</option>
+                            <option value="cafe">Café</option>
+                            <option value="leche">Leche</option>
+                            <option value="cerveza">Cerveza</option>
+                            <option value="agua">Agua</option>
+                        </select>
+                    </th>
+                </tr>
+
+                <!-- FILA 5 -->
+                <tr>
+                    <th>CIGARROS</th>
+
+                    <th><select class="caja" id="cigarros1" onchange="myFunction16()">
+                            <option></option>
+                            <option value="prince">Prince</option>
+                            <option value="pallmall">Pall Mall</option>
+                            <option value="blends">Blends</option>
+                            <option value="dunhill">Dunhill</option>
+                            <option value="bluemaster">Bluemaster</option>
+                        </select>
+                    </th>
+                    <th><select class="caja" id="cigarros2" onchange="myFunction17()">
+                            <option></option>
+                            <option value="prince">Prince</option>
+                            <option value="pallmall">Pall Mall</option>
+                            <option value="blends">Blends</option>
+                            <option value="dunhill">Dunhill</option>
+                            <option value="bluemaster">Bluemaster</option>
+                        </select>
+                    </th>
+                    <th><select class="caja" id="cigarros3" onchange="myFunction18()">
+                            <option></option>
+                            <option value="prince">Prince</option>
+                            <option value="pallmall">Pall Mall</option>
+                            <option value="blends">Blends</option>
+                            <option value="dunhill">Dunhill</option>
+                            <option value="bluemaster">Bluemaster</option>
+                        </select>
+                    </th>
+                    <th><select class="caja" id="cigarros4" onchange="myFunction19()">
+                            <option></option>
+                            <option value="prince">Prince</option>
+                            <option value="pallmall">Pall Mall</option>
+                            <option value="blends">Blends</option>
+                            <option value="dunhill">Dunhill</option>
+                            <option value="bluemaster">Bluemaster</option>
+                        </select>
+                    </th>
+                    <th><select class="caja" id="cigarros5" onchange="myFunction20()">
+                            <option></option>
+                            <option value="prince">Prince</option>
+                            <option value="pallmall">Pall Mall</option>
+                            <option value="blends">Blends</option>
+                            <option value="dunhill">Dunhill</option>
+                            <option value="bluemaster">Bluemaster</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>MASCOTA</th>
+
+                    <th><select class="caja" id="mascota1" onchange="myFunction21()">
+                            <option></option>
+                            <option value="perro">Perro</option>
+                            <option value="pajaro">Pajaro</option>
+                            <option value="gato">Gato</option>
+                            <option value="caballo">Caballo</option>
+                            <option value="pez">Pez</option>
+                        </select>
+                    </th>
+                    <th><select class="caja" id="mascota2" onchange="myFunction22()">
+                            <option></option>
+                            <option value="perro">Perro</option>
+                            <option value="pajaro">Pajaro</option>
+                            <option value="gato">Gato</option>
+                            <option value="caballo">Caballo</option>
+                            <option value="pez">Pez</option>
+                        </select>
+                    </th>
+                    <th><select class="caja" id="mascota3" onchange="myFunction23()">
+                            <option></option>
+                            <option value="perro">Perro</option>
+                            <option value="pajaro">Pajaro</option>
+                            <option value="gato">Gato</option>
+                            <option value="caballo">Caballo</option>
+                            <option value="pez">Pez</option>
+                        </select>
+                    </th>
+                    <th><select class="caja" id="mascota4" onchange="myFunction24()">
+                            <option></option>
+                            <option value="perro">Perro</option>
+                            <option value="pajaro">Pajaro</option>
+                            <option value="gato">Gato</option>
+                            <option value="caballo">Caballo</option>
+                            <option value="pez">Pez</option>
+                        </select>
+                    </th>
+                    <th><select class="caja" id="mascota5" onchange="myFunction25()">
+                            <option></option>
+                            <option value="perro">Perro</option>
+                            <option value="pajaro">Pajaro</option>
+                            <option value="gato">Gato</option>
+                            <option value="caballo">Caballo</option>
+                            <option value="pez">Pez</option>
+                        </select>
+                    </th>
+                </tr>
+
+
+            </table>
+            
+            <p id="demo"></p>
+            <input type="button" id='botoncito' value="CHECK" onclick="FbotonOn()">
+
+            
+        </div>
+
+    </div>
+    <h1 id="mensaje">¡Supreme victory!</h1>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>

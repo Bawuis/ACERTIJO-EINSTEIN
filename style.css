@@ -1,0 +1,223 @@
+#titulo {
+
+  background-color: rgb(169, 255, 174);
+  font-size: 45px;
+  padding: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 15px;
+}
+
+.accordion {
+  background-color: rgb(169, 255, 174);
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  margin-bottom: 5px;
+  transition: 0.4s;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  border-radius: 15px;
+
+}
+
+
+  
+
+.panel {
+  padding: 0 18px;
+  background-color: #eee;
+  display: none;
+  overflow: hidden;
+  font-size: 24px;
+  line-height: 30px;
+  border-radius: 15px;
+
+}
+
+
+#cont1 {
+  display: flex;
+  margin: 5px;
+  border: 4px;
+  border-color: black;
+
+}
+
+#puzzle {
+
+  height: 750px;
+  width: 1000px;
+  border: 1px solid black;
+
+  margin: 5px;
+
+}
+
+#instrucciones {
+
+  height: 750px;
+  width: 1000px;
+  border: 1px solid black;
+
+  margin: 5px;
+
+}
+
+#tituloinstru {
+  background-color: rgb(169, 255, 174);
+  width: 400px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  text-align: center;
+  border-radius: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#list {
+  line-height: 30px;
+  font-size: 25px;
+
+}
+
+#puzz {
+  background-color: rgb(169, 255, 174);
+  width: 400px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.caja {
+  width: 92px;
+}
+
+#tablita {
+
+  width: 100%;
+  height: 60%;
+  white-space: normal;
+  border: 1px solid;
+  align-content: center;
+
+}
+
+#td,
+th {
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+#botoncito {
+  display: block;
+  font-size: 50px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 500px;
+  border-radius: 15px;
+}
+
+#mensaje {
+  
+  height: 425px;
+  color:black;
+  background-color: white;
+  
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  font-size: 150px;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+ 
+}
+#demo{
+  font-size: 23px;
+}
+.ocultar #demo{
+  display:none;
+}
+
+#mensaje2{
+  display:none;
+}
+
+.ganaste {
+  background-image: url(https://c.tenor.com/Uh4Mcry2P8EAAAAC/pato-bailar.gif);
+  
+}
+
+.ganaste #mensaje {
+  display: block;
+  
+}
+.ganaste #mensaje2 {
+  display: block;
+  
+}
+.ganaste  #cont1  {
+  display:none;
+}
+.ganaste  #botoncito  {
+  display:none;
+}
+.ganaste  .accordion {
+  display:none;
+}
+.ganaste  #titulo {
+  display:none;
+}
+.ganaste  .panel  {
+  display:none;
+}
+.ganaste  #puzzle  {
+  display:none;
+}
+.ganaste  #instrucciones  {
+  display:none;
+}
+.ganaste  #tituluinstru  {
+  display:none;
+}
+.ganaste #tablita{
+  display: none;
+}
+
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,.accordion:hover {
+  background-color: rgb(158, 221, 161);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.accordion:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: rgb(47, 0, 255);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
